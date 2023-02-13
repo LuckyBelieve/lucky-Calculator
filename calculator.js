@@ -14,16 +14,16 @@ function add([num1,num2,num3,num4,num5]){
  //this will help the user to find the sum of the five numbers
  // i exported the function so that it can be accessed with require function
 
- module.exports.add = add;
+ module.exports.add = add();
 
  //a function to make a multiplication of the elements of the array and return 
  //the product
 
  function findProduct([number1,number2,number3,number4,number5]){
-    let numbers = [number1,number2,number3,number4,number5];
+    let number = [number1,number2,number3,number4,number5];
     let product = 1;
-    for (let i = 0;i<numbers.length;i++){
-        product *=numbers[i];
+    for (let i = 0;i<number.length;i++){
+        product *=number[i];
     }
     return product;
  }
@@ -32,4 +32,4 @@ function add([num1,num2,num3,num4,num5]){
 
 //  exporting the function so that it can be accessed by many people
 
- module.exports.findProduct = findProduct;
+ module.exports.findProduct = findProduct();
